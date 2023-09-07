@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm</title>
+    <style>
+    .checkbox{
+        margin-top:100px;
+        height:60px;
+
+    }
+    body{
+        background-color: rgb(17, 6, 19);
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="check">
+        
+        <input type="text" class="checkbox" onchange="identify()" placeholder="Enter OTP" onfocus="this.value=''">
+        <p class="confirm" ></p>
+    </div>
+    </center>
+
+</body>
+
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+<!-- <script src="confirmPage.js"> </script> -->
+<script>
+  
+    let s=''
+    var message='hello this is message'
+    
+    function confirm(){
+        
+        let num='0123456789'
+                for(let i=0;i<6;i++){
+                    s+=num[Math.floor(Math.random()*10)]
+                }
+    let t=new URLSearchParams(window.location.search)
+    let to1=t.get('id')
+                
+                
+                Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : 'naysasamara@gmail.com',
+        Password : 'rbmjrcsqppkgmqun',
+        To : to1 ,
+        From : 'naysasamara@gmail.com',
+        Subject : "OTP Verification",
+        Body : "otp for verification"+s+"<br>This is just a testing purpose not real don't reply to this message "
+    }).then(
+              
+            );
+    
+    console.log('after smtp')
+    console.log('s : '+s)
+    
+     
+    
+    
+    }
+    
+    
+</script>
+
+
+<script>
+    confirm()
+    function identify(){
+        let ct=document.getElementsByClassName('checkbox')[0].value
+    if(ct===s){
+        document.getElementsByClassName('confirm')[0].innerHTML='Successfully logged in'
+        document.getElementsByClassName('confirm')[0].style.color='green'
+    setTimeout(()=> location.href='ecomCart.html',3000) 
+    }else{
+        document.getElementsByClassName('confirm')[0].innerHTML='Wrong OTP Try Again'
+        document.getElementsByClassName('confirm')[0].style.color='red'
+    }
+    }
+
+
+
+
+
+</script>
+
+
+</html>

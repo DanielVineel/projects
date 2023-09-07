@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E COmmerence Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #main{
+            background-color: rgb(232, 220, 197);
+            height:100vh;
+            position:absolute;
+            top:0px;
+            width:100%;
+        }
+       
+        #cart{
+            height:30px;
+            width:50px;
+            /* background-color: blueviolet; */
+            position:absolute;
+            right:10px;
+            top:10px;
+            font-size:30px;
+            
+        }
+        #slider>#items2{
+            display:none;
+            width:33%;
+            height:90vh;
+            position: absolute;
+            right:10px;
+            top:8vh;
+       
+            overflow-y: scroll;
+            background-color: rgb(7, 45, 132);
+            column-gap:10px;
+            flex-wrap: wrap;
+
+        }
+        /* #cb:checked ~ #main #items1{
+            width: 60% ;
+        }
+        #cb:checked ~ #slider #items2{
+            display:block;
+            background-color: wheat;
+        } */
+        img{
+            width:200px;
+            height:130px;
+        }
+        #main>#items1{
+            height:90vh;
+            width:95%;
+            margin:50px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-between  ; */
+            column-gap: 100px;
+            /* row-gap:50px; */
+            overflow-y: scroll;
+            background-color: rgb(38, 28, 74);
+            
+        }
+      #main>#items1>div {
+            margin-left:50px;
+            margin-top:30px;
+            background-color: rgb(21, 236, 251);
+            width:200px;
+            flex-wrap: wrap;
+
+        }
+       
+        #slider>#items2>div{
+            margin:15px;
+            
+            column-gap: 50px;
+            row-gap:5px;
+            
+
+            color:white;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- <input type="checkbox"  id="cb" style="display: none;"> -->
+    
+    <div id="main">
+    
+        <div id="cart"><i class="fa fa-cart-plus"></i></div>
+
+
+        <div id="items1">
+        <div id="item1">
+            <img src="./img/pic1.jfif" alt=""  id="pic1"  >
+            <div class='content' >
+                <h2>Name</h2>
+                <hr>
+                <div class='details'>
+                    <h4>Details</h4>
+                Detailed Description goes here
+                </div>
+                <hr>
+                <div class="amount"><b>Amount : </b>2091</div>
+            
+            </div>
+            <br>
+            <div id="product1">ADD TO CART 1</div>
+        </div>
+        <div id="item2"><img src="./img/pic2.jfif" alt=""  id="pic2"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product2">ADD TO CART 2</div></div>
+        <div id="item3"><img src="./img/pic3.jfif" alt=""  id="pic3"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product3">ADD TO CART 3</div></div>
+        <div id="item4"><img src="./img/pic4.jfif" alt=""  id="pic4"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product4">ADD TO CART 4</div></div>
+        <div id="item5"><img src="./img/pic5.jfif" alt=""  id="pic5"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product5">ADD TO CART 5</div></div>
+        <div id="item6"><img src="./img/pic6.jfif" alt=""  id="pic6"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product6">ADD TO CART 6</div></div>
+        <div id="item7"><img src="./img/pic7.jfif" alt=""  id="pic7"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product7">ADD TO CART 7</div></div>
+        <div id="item8"><img src="./img/pic8.jfif" alt=""  id="pic8"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product8">ADD TO CART 8</div></div>
+        <div id="item9"><img src="./img/pic9.jfif" alt=""  id="pic9"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product9">ADD TO CART 9</div></div>
+        <div id="item10"><img src="./img/pic10.jfif" alt=""  id="pic10"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product10">ADD TO CART 10</div></div>
+        <div id="item11"><img src="./img/pic11.jfif" alt=""  id="pic11"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product11">ADD TO CART 11</div></div>
+        <div id="item12"><img src="./img/pic12.jfif" alt=""  id="pic12"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product12">ADD TO CART 12</div></div>
+        <div id="item13"><img src="./img/pic13.jfif" alt=""  id="pic13"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product13">ADD TO CART 13</div></div>
+        <div id="item14"><img src="./img/pic14.jfif" alt=""  id="pic14"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product14">ADD TO CART 14</div></div>
+        <div id="item15"><img src="./img/pic15.jfif" alt=""  id="pic15"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product15">ADD TO CART 15</div></div>
+        <div id="item16"><img src="./img/pic16.jfif" alt=""  id="pic16"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product16">ADD TO CART 16</div></div>
+        <div id="item17"><img src="./img/pic17.jfif" alt=""  id="pic17"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product17">ADD TO CART 17</div></div>
+        <div id="item18"><img src="./img/pic18.jfif" alt=""  id="pic18"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product18">ADD TO CART 18</div></div>
+        <div id="item19"><img src="./img/pic19.jfif" alt=""  id="pic19"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product19">ADD TO CART 19</div></div>
+        <div id="item20"><img src="./img/pic20.jfif" alt=""  id="pic20"  ><div class='content' ><h2>Name</h2><hr><div class='details'><h4>Details</h4>Detailed info about the product</div><hr><div class="amount"><b>Amount : </b>2091</div></div><br><div id="product20">ADD TO CART 20</div></div>
+      
+
+        </div>
+
+    </div>
+    <div id="slider">
+        hello These are the cart items <br>
+        <div id="items2">
+           
+        </div>
+    </div>
+</body>
+
+<script>
+
+
+    document.getElementById('items2').style.display='none';
+    let count=0
+    document.getElementById('cart').addEventListener('click',()=>{
+        count+=1
+        if(count===1){
+    document.getElementById('items2').style.display='block';
+    document.getElementById('items1').style.width='65%';        
+    // document.getElementById('items2').style.width='38%';   
+
+
+        }
+        if(count===2){
+    document.getElementById('items2').style.display='none';   
+    document.getElementById('items1').style.width='95%';   
+    // document.getElementById('items1').style.margin='50px';        
+
+
+count=0
+        }
+    })
+    //cart function
+
+    
+
+    
+
+
+let cartItems={}
+for(let i=1;i<21;i++){
+
+   
+
+
+
+    document.getElementById('product'+i).style.padding='15px'
+    document.getElementById('product'+i).style.backgroundColor='rgb('+54+', '+212+','+ 10+')';
+    document.getElementById('product'+i).addEventListener('click',(e)=>{
+if(!cartItems[e.target.parentElement.id]){
+    cartItems['item'+i]={
+        'pic':e.target.parentElement.getElementsByTagName('img')[0].getAttribute('src'),
+        'content':e.target.parentElement.getElementsByTagName('div')[0].innerHTML
+        // 'content':e.target.parentElement.getElementById('content').innerHTML
+
+    }
+
+console.log(cartItems)
+        let child=document.createElement('div');
+        let imgs=document.createElement('img')
+        
+        imgs.setAttribute('src','./img/pic'+i+'.jfif')
+        // imgs.style.height='150px'
+        // imgs.style.width='200px'
+        
+
+        let content=document.createElement('div')
+        content.innerHTML=cartItems['item'+i]['content']
+
+        // child.style.width='200px'
+        // child.style.justifyContent='space-evenly'
+        child.setAttribute('class','cart'+i)
+        child.style.display='flex';
+        child.style.marginTop='50px';
+        child.appendChild(imgs)
+    
+        child.appendChild(content)
+        console.log(child)
+        // document.getElementById('item'+i).style.height='50px'
+
+        document.getElementById('items2').appendChild(child)
+        // child.style.border='2px solid'
+
+}
+
+    })
+}
+
+
+
+
+</script>
+
+</html>
